@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Designz Factory</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Work+Sans:300,400,500,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css">
+		<style>
+			@keyframes zoomInOut {
+             0% {
+               transform: scale(1);
+             }
+             50% {
+               transform: scale(1.1);
+             }
+             100% {
+                          transform: scale(1);
+             }
+           }
+         .hero {
+           animation: zoomInOut 10s 1 alternate; 
+           background-size: cover;
+           background-position: center;
+         }
+
+			@keyframes slideInLeft 
+			{
+            from {
+               opacity: 0;
+               transform: translateX(-100%);
+             }
+             to {
+               opacity: 1;
+               transform: translateX(0);
+             }
+           }
+
+           .container .hero__wrapper .row .col-lg-10 {
+             animation: slideInLeft 1s ease-out;
+           }
+		</style>
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			<!-- Content-->
+			<div class="md-content">
+				
+				<!-- hero -->
+				<div class="hero md-skin-dark" style="background-image:url(assets/img/bg.jpg);">
+
+						<!-- header -->
+						<div class="header">
+							<div class="header__left"><img src="assets/img/logo.png" alt="" style="width: 150px">
+							</div>
+
+						</div><!-- End / header -->
+						<div class="container">
+							<div class="hero__wrapper">
+								<div class="row">
+									<div class="col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 animate__animated animate__slideInLeft">
+										<div class="hero__title_inner">
+											<h1 class="hero__title">Crafting Brands, Building Solutions</h1>
+											<p class="hero__text">Where creativity meets strategy, and challenges find transformative answers</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+				</div><!-- End / hero -->
+				
+			</div>
+			<!-- End / Content-->
+		</div>
+
+
+	</body>
+</html>
